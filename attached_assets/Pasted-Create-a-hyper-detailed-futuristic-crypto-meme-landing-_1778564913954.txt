@@ -1,0 +1,233 @@
+Create a hyper-detailed futuristic crypto meme landing page for **ANTI HANTA**, styled exactly like a high-end cinematic gaming + biotech meme token website.
+Theme: dark sci-fi laboratory, neon green biohazard energy, immune serum aesthetic, survival resistance movement.
+Visual style: ultra polished, realistic Pixar-quality 3D characters mixed with AAA game UI design, cinematic lighting, black + toxic neon green color palette, glossy futuristic panels, glowing effects, fog, smoke, laboratory atmosphere, biohazard symbols.
+
+PAGE STYLE:
+
+* Fullscreen responsive landing page
+* Black background with neon toxic green highlights
+* Futuristic military biotech design
+* High contrast typography
+* Green glowing borders and UI cards
+* Smooth glassmorphism + cyberpunk panels
+* Cinematic depth and lighting
+* Dense visual composition like a premium crypto launch page
+* Every section separated with glowing bordered cards
+* Use sharp modern sans-serif font similar to Bebas Neue + Inter
+* Add subtle animated smoke, particles, glowing serum effects
+* UI should feel like a mix of:
+
+  * Resident Evil
+  * Cyberpunk 2077
+  * futuristic biotech lab
+  * meme coin culture
+  * gaming esports website
+
+HEADER:
+
+* Fixed top navbar
+* Left side logo:
+
+  * biohazard icon
+  * text:
+    ANTI HANTA
+    subtitle: THE IMMUNE VACCINE OF HANTA
+* Navigation:
+  HOME
+  ABOUT
+  TOKEN
+  ROADMAP
+  APP
+  COMMUNITY
+  FAQ
+* Right side:
+  neon green BUY $ANTI button
+  social icons:
+  Telegram
+  X/Twitter
+  Discord
+
+HERO SECTION:
+Layout:
+
+* Left side:
+  heroic white lab rat mascot
+* Right side:
+  infected black mutant rats with red glowing eyes
+* Center:
+  massive title:
+  ANTI
+  HANTA
+* Subtitle:
+  THE IMMUNE VACCINE OF HANTA
+* Small text:
+  NOT A VIRUS. A CURE.
+* Description:
+  “When the crypto market became infected with fear, panic, and endless virus-themed meme coins… one experiment escaped the Ethereum labs.”
+* Warning style green text:
+  “THE CURE IS SPREADING.”
+* CTA buttons:
+  BUY $ANTI
+  JOIN THE RESISTANCE
+
+WHITE RAT MASCOT DESIGN:
+
+* White laboratory rat
+* Realistic but animated Pixar-style
+* Wearing futuristic hazmat tactical suit
+* Black respirator mask with glowing green biohazard filters
+* Neon green serum tanks on back
+* Tactical armor details
+* Cute but dangerous
+* Big expressive eyes
+* Heroic posture
+* Holding glowing green serum injector weapon
+* Military biotech aesthetic
+* High-end cinematic render
+* No goofy proportions
+
+ENEMY RATS:
+
+* Black infected rats
+* Red glowing eyes
+* Aggressive mutation design
+* Wet fur
+* Sharp teeth
+* Horror cinematic vibe
+* Emerging from smoke and darkness
+* Red biohazard marks
+
+SECTION 2 — THE ORIGIN OF THE CURE:
+Two-column glowing card layout
+
+LEFT:
+Text story about Ethereum infection and meme outbreak.
+
+RIGHT:
+Large glowing green serum bottle labeled:
+ANTI HANTA
+IMMUNITY SERUM
+
+Laboratory environment:
+
+* glass tubes
+* green liquids
+* glowing fog
+* biotech chamber
+* sci-fi laboratory lighting
+
+SECTION 3 — BUILT DIFFERENT:
+Right side:
+large white rat portrait with crossed arms
+
+Left side:
+feature list with neon icons:
+
+* Meme Culture
+* Survival Energy
+* Futuristic Immunity
+* AI Health Utility
+* Ethereum Trench Warfare
+
+SECTION 4 — THE WHITE RAT:
+Card with:
+
+* white rat close-up
+* lore text
+* glowing green immunity icons
+* futuristic UI stats
+
+SECTION 5 — IMMUNE PROTOCOL:
+Futuristic laboratory command center scene:
+
+* tiny rats working on hologram monitors
+* green holographic displays
+* immunity scanning systems
+* glowing screen:
+  “IMMUNITY STATUS 100% PROTECTED”
+
+SECTION 6 — MOBILE APP:
+Display futuristic phone mockup showing:
+ANTI HANTA app UI
+
+* immune score
+* protection status
+* survival leaderboard
+* outbreak tracking
+* green radar interface
+* biotech dashboard aesthetic
+
+SECTION 7 — JOIN THE RESISTANCE:
+Resistance army of white rats holding ANTI HANTA flag.
+Dark battlefield smoke atmosphere.
+Large cinematic composition.
+
+BOTTOM TOKEN SECTION:
+Huge glowing text:
+$ANTI
+THE CURE ON ETHEREUM
+
+Feature icons:
+
+* Community Driven
+* Meme Powered
+* Immune Protocol Activated
+* Built for the Trenches
+
+CENTER:
+Large circular ANTI HANTA coin emblem with:
+
+* white rat logo
+* metallic gold + green coin design
+* glowing serum syringes behind coin
+
+RIGHT:
+Huge text:
+THE CURE HAS ARRIVED
+
+CTA BUTTONS:
+BUY $ANTI NOW
+ENTER THE LAB
+
+FOOTER:
+
+* Logo
+* Social icons
+* Copyright text
+* Dark minimal biotech style
+
+COLOR PALETTE:
+
+* Pure black background
+* Toxic neon green
+* Biohazard green glow
+* Dark gray metallic panels
+* White typography
+* Red accents only for infected rats
+
+VISUAL EFFECTS:
+
+* Green volumetric lighting
+* Smoke
+* Fog
+* Glowing liquid tubes
+* Animated sparks
+* Hologram UI
+* Glass reflections
+* Green bloom lighting
+* Cinematic shadows
+* Biotech atmosphere
+
+IMPORTANT:
+
+* Make layout extremely dense and visually rich
+* Every section should look like a premium AAA game poster
+* Keep everything ultra polished and cinematic
+* Maintain consistent neon green biohazard branding across entire page
+* The landing page must feel like the “antidote” against infected meme coins
+* Use realistic textures and highly detailed environmental storytelling
+* Responsive desktop-first design
+* Add subtle hover animations and glowing transitions
+* No empty spaces
+* No generic crypto template look
+* Must look premium, viral, cinematic, and unforgettable

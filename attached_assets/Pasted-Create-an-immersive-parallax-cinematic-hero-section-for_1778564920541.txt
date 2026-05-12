@@ -1,0 +1,237 @@
+Create an immersive **parallax cinematic hero section** for the ANTI HANTA crypto meme landing page using **4 layered depth composition**.
+The hero must feel alive, cinematic, dramatic, and AAA game quality with strong foreground/background separation.
+
+HERO SECTION STRUCTURE — PARALLAX SYSTEM:
+
+Use **4 visual layers** with independent movement speeds for mouse movement and scrolling.
+
+---
+
+# LAYER 1 — BACKGROUND (Deepest Layer)
+
+Full-width cinematic environment background.
+
+Scene:
+
+* Dark futuristic biotech laboratory battlefield
+* Toxic green fog
+* Industrial sci-fi walls
+* Broken laboratory containers
+* Smoke and atmospheric haze
+* Neon green volumetric lighting
+* Biohazard symbols glowing faintly
+* Green particles floating in air
+* Distant shadows of infected creatures
+* High cinematic depth
+
+Style:
+
+* Slight blur for depth
+* Dark black + neon green palette
+* Resident Evil + Cyberpunk atmosphere
+* Dramatic lighting
+* Massive scale environment
+
+Parallax:
+
+* Slowest movement
+* Subtle drift effect
+
+---
+
+# LAYER 2 — LEFT SIDE HERO RAT (Foreground Mid Layer)
+
+Main white immune rat mascot positioned on LEFT side.
+
+Character Design:
+
+* White laboratory rat
+* Pixar-realistic 3D quality
+* Futuristic hazmat tactical suit
+* Black respirator mask
+* Neon green glowing filters
+* Serum tanks attached to back
+* Tactical armor details
+* Holding glowing green serum injector rifle
+* Heroic fighting stance
+* Cute but dangerous
+
+Pose:
+
+* Facing RIGHT toward enemy rats
+* Battle-ready pose
+* One foot forward
+* Dynamic action posture
+
+Effects:
+
+* Green glow reflections
+* Rim lighting
+* Smoke around feet
+* Floating particles
+* Slight motion blur energy
+
+Parallax:
+
+* Medium-fast movement
+* Moves slightly toward cursor direction
+
+---
+
+# LAYER 3 — RIGHT SIDE INFECTED RATS (Foreground Mid Layer)
+
+Group of black infected mutant rats positioned on RIGHT side.
+
+Design:
+
+* Aggressive infected rats
+* Wet black fur
+* Sharp teeth
+* Red glowing eyes
+* Red biohazard marks
+* Horror mutation style
+* Monster-like silhouettes
+
+Pose:
+
+* Charging toward the white rat
+* Growling and attacking
+* Dynamic cinematic composition
+
+Effects:
+
+* Red glow accents
+* Smoke and dust
+* Red particle energy
+* Atmospheric shadows
+
+Parallax:
+
+* Medium-fast movement opposite direction
+* Slight aggressive movement feel
+
+---
+
+# LAYER 4 — GROUND / FOREGROUND (Closest Layer)
+
+Foreground battlefield ground layer.
+
+Elements:
+
+* Broken concrete floor
+* Toxic glowing green cracks
+* Spilled glowing serum liquid
+* Small debris
+* Smoke near ground
+* Green reflections
+* Broken syringes
+* Battlefield texture
+* Metallic lab floor fragments
+
+Style:
+
+* Ultra detailed textures
+* Strong perspective depth
+* Cinematic realism
+
+Parallax:
+
+* Fastest movement
+* Strongest depth effect
+
+---
+
+# CENTER CONTENT (Above Layers)
+
+Centered between left and right characters.
+
+Huge Title:
+ANTI
+HANTA
+
+Typography:
+
+* Massive bold font
+* White + toxic green mix
+* Distressed texture
+* Slight glow
+* Cinematic shadow
+
+Subtitle:
+THE IMMUNE VACCINE OF HANTA
+
+Green warning text:
+NOT A VIRUS. A CURE.
+
+Description:
+“When the crypto market became infected with fear, panic, and endless virus-themed meme coins… one experiment escaped the Ethereum labs.”
+
+Extra glowing line:
+⚠ THE CURE IS SPREADING.
+
+Buttons:
+
+* BUY $ANTI
+* JOIN THE RESISTANCE
+
+Buttons Style:
+
+* Neon green glow
+* Futuristic biotech UI
+* Hover animations
+* Glassmorphism borders
+
+---
+
+# PARALLAX ANIMATION DETAILS
+
+Mouse Movement:
+
+* Each layer moves independently
+* Smooth easing
+* Cinematic depth illusion
+
+Depth Order:
+
+1. Background slowest
+2. Characters medium
+3. Ground fastest
+
+Extra Effects:
+
+* Floating toxic particles
+* Animated fog
+* Green light flickers
+* Hologram distortion
+* Subtle screen shake during hover
+* Dynamic lighting glow
+
+---
+
+# OVERALL STYLE
+
+Must look like:
+
+* AAA game homepage
+* Premium crypto meme project
+* Cinematic movie poster
+* High-budget biotech war universe
+
+Visual Inspiration:
+
+* Resident Evil
+* The Division
+* Cyberpunk 2077
+* Arcane lighting quality
+* Pixar-quality character rendering
+* Unreal Engine cinematic scene
+
+IMPORTANT:
+
+* Keep layout extremely polished and cinematic
+* No cartoon cheap look
+* No empty spaces
+* Strong depth and atmosphere
+* Make the hero section feel alive and interactive
+* The white rat and infected rats must visually feel like they are about to collide in battle
+* Maintain toxic neon green branding across entire composition
