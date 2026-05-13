@@ -45,13 +45,23 @@ export function Token() {
                 {/* Glowing Core */}
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,255,65,0.2)_0%,transparent_70%)]" />
                 
-                {/* Rat Logo inside coin */}
-                <svg viewBox="0 0 100 100" className="w-1/2 h-1/2 fill-primary drop-shadow-[0_0_10px_rgba(0,255,65,0.8)] z-10">
-                  <path d="M50 20 C30 20, 20 40, 20 60 L80 60 C80 40, 70 20, 50 20 Z" />
-                  <circle cx="35" cy="45" r="5" fill="#000" />
-                  <circle cx="65" cy="45" r="5" fill="#000" />
-                  <path d="M45 55 L55 55 L50 60 Z" fill="#000" />
-                </svg>
+                {/* Coin Image */}
+                <img
+                  src="/images/coin.png"
+                  alt="ANTI HANTA Coin"
+                  className="
+                    relative
+                    z-10
+                    w-[58%]
+                    h-[58%]
+                    object-contain
+                    drop-shadow-[0_0_25px_rgba(0,255,65,0.8)]
+                    group-hover:scale-105
+                    transition-transform
+                    duration-500
+                  "
+                  draggable={false}
+                />
               </div>
 
               {/* Surrounding Syringes */}
@@ -73,11 +83,11 @@ export function Token() {
               THE CURE<br/>HAS ARRIVED
             </h3>
             <p className="text-xl text-primary font-mono tracking-widest font-bold">
-              $ANTI — THE CURE ON ETHEREUM
+              $ANHA — THE CURE ON ETHEREUM
             </p>
             <div className="flex flex-col gap-4 mt-8">
               <button className="bg-primary text-black font-['Bebas_Neue'] text-3xl px-8 py-4 hover:bg-white transition-colors shadow-[0_0_20px_rgba(0,255,65,0.4)]">
-                BUY $ANTI NOW
+                BUY $ANHA NOW
               </button>
               <button className="bg-transparent border border-white text-white font-['Bebas_Neue'] text-3xl px-8 py-4 hover:bg-white/10 transition-colors">
                 ENTER THE LAB

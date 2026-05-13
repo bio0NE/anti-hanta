@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+const characterImg = "/images/white-rat.png";
 
 export function Character() {
   const ref = useRef(null);
@@ -28,24 +29,55 @@ export function Character() {
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 relative z-10">
             <div className="md:col-span-5 flex justify-center items-center">
-              <div className="relative w-full max-w-[300px] aspect-square rounded-full border border-primary/40 bg-primary/5 flex items-center justify-center overflow-hidden shadow-[0_0_40px_rgba(0,255,65,0.2)]">
-                <svg viewBox="0 0 200 200" className="w-[120%] h-[120%] drop-shadow-[0_0_15px_rgba(0,255,65,0.5)]">
-                  {/* Character Portrait */}
-                  <defs>
-                    <linearGradient id="armorGrad" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0%" stopColor="#fff" />
-                      <stop offset="100%" stopColor="#ccc" />
-                    </linearGradient>
-                  </defs>
-                  <path d="M50 200 C50 120, 80 80, 100 80 C120 80, 150 120, 150 200 Z" fill="url(#armorGrad)" stroke="#00ff41" />
-                  <path d="M70 120 Q100 70 130 120 Q100 160 70 120 Z" fill="#f8fafc" />
-                  <ellipse cx="60" cy="90" rx="15" ry="25" transform="rotate(-20 60 90)" fill="#fff" />
-                  <ellipse cx="140" cy="90" rx="15" ry="25" transform="rotate(20 140 90)" fill="#fff" />
-                  <path d="M75 110 Q100 130 125 110 L120 135 Q100 150 80 135 Z" fill="#111" />
-                  <circle cx="90" cy="120" r="6" fill="#00ff41" className="animate-pulse" />
-                  <circle cx="110" cy="120" r="6" fill="#00ff41" className="animate-pulse" />
-                  <rect x="90" y="150" width="20" height="30" fill="#222" rx="4" stroke="#00ff41" />
-                </svg>
+              <div className="relative w-full max-w-[340px] aspect-square rounded-full border border-primary/40 bg-primary/5 flex items-center justify-center overflow-hidden shadow-[0_0_40px_rgba(0,255,65,0.2)]">
+                <div className="relative w-full h-full flex items-center justify-center">
+
+                  {/* LAB GLOW */}
+                  <div className="absolute inset-0 bg-primary/20 blur-[60px] rounded-full animate-pulse" />
+
+                  {/* ROTATING RING */}
+                  <motion.div
+                    animate={{ rotate: 360 }}
+                    transition={{
+                      duration: 14,
+                      repeat: Infinity,
+                      ease: "linear",
+                    }}
+                    className="absolute w-[88%] h-[88%] rounded-full border border-primary/30"
+                  />
+
+                  {/* CHARACTER IMAGE */}
+                  <motion.img
+                    src={characterImg}
+                    alt="White Rat"
+                    animate={{
+                      y: [0, 10, 0],
+                    }}
+                    transition={{
+                      duration: 4,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    }}
+                    className="relative z-10 w-[120%] h-[120%] object-contain translate-x-[-20px] translate-y-[20px]"
+                    style={{
+                      filter:
+                        "drop-shadow(0 0 30px rgba(0,255,65,0.55)) drop-shadow(0 0 70px rgba(0,255,65,0.25))",
+                    }}
+                  />
+
+                  {/* SCAN EFFECT */}
+                  <motion.div
+                    animate={{
+                      y: ["-120%", "120%"],
+                    }}
+                    transition={{
+                      duration: 3,
+                      repeat: Infinity,
+                      ease: "linear",
+                    }}
+                    className="absolute inset-x-0 h-20 bg-gradient-to-b from-transparent via-primary/20 to-transparent blur-2xl"
+                  />
+                </div>
               </div>
             </div>
 

@@ -18,15 +18,13 @@ export function Origin() {
               </h2>
               <div className="space-y-6 text-white/70 text-lg font-medium">
                 <p>
-                  Year 2024. The Ethereum network was overrun. Malicious viral tokens spread uncontrollably, 
-                  infecting wallets and draining liquidity. The market was sick.
+                  Year 2026. The HANTA virus went viral across the Ethereum network. Malicious tokens spread like a digital plague, infecting wallets, draining liquidity, and turning the trenches into chaos. Panic consumed the market. No protocol was safe.
                 </p>
                 <p>
-                  Deep within an underground bio-lab, a rogue faction of developers synthesized the ultimate counter-measure. 
-                  They didn't build another virus. They built immunity.
+                  Deep beneath the surface, inside a hidden underground bio-lab, a rogue faction of developers began engineering a countermeasure. They didn’t create another virus. They created immunity.
                 </p>
                 <p className="text-primary/90 font-bold border-l-2 border-primary pl-4">
-                  ANTI HANTA was born—a heavily armored, tactical protocol designed to cleanse the trenches and establish a new era of survival.
+                  ANTI HANTA was born — a heavily armored, tactical protocol forged to hunt the infection, cleanse the blockchain trenches, and restore survival to a collapsing ecosystem.
                 </p>
               </div>
             </div>
@@ -35,63 +33,68 @@ export function Origin() {
               {/* Scanlines overlay */}
               <div className="absolute inset-0 pointer-events-none opacity-20" style={{ backgroundImage: "repeating-linear-gradient(0deg, transparent, transparent 2px, #00ff41 2px, #00ff41 4px)" }}></div>
               
-              {/* Serum Bottle SVG */}
-              <div className="relative w-48 h-80 z-10">
-                <svg viewBox="0 0 200 400" className="w-full h-full drop-shadow-[0_0_30px_rgba(0,255,65,0.6)]">
-                  <defs>
-                    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="0%">
-                      <stop offset="0%" stopColor="rgba(255,255,255,0.3)" />
-                      <stop offset="20%" stopColor="rgba(255,255,255,0.1)" />
-                      <stop offset="80%" stopColor="rgba(255,255,255,0.1)" />
-                      <stop offset="100%" stopColor="rgba(255,255,255,0.4)" />
-                    </linearGradient>
-                    <linearGradient id="liquid" x1="0%" y1="100%" x2="0%" y2="0%">
-                      <stop offset="0%" stopColor="#00ff41" />
-                      <stop offset="70%" stopColor="#00cc33" />
-                      <stop offset="100%" stopColor="rgba(0,255,65,0.8)" />
-                    </linearGradient>
-                    <filter id="glow">
-                      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
-                      <feMerge>
-                        <feMergeNode in="coloredBlur"/>
-                        <feMergeNode in="SourceGraphic"/>
-                      </feMerge>
-                    </filter>
-                  </defs>
-                  
-                  {/* Cap */}
-                  <rect x="70" y="20" width="60" height="30" rx="5" fill="#333" stroke="#555" strokeWidth="2" />
-                  <rect x="75" y="10" width="50" height="10" rx="2" fill="#111" />
-                  
-                  {/* Bottle Neck */}
-                  <path d="M85 50 L115 50 L125 90 L75 90 Z" fill="url(#glass)" stroke="rgba(255,255,255,0.5)" />
-                  
-                  {/* Main Bottle Body */}
-                  <rect x="40" y="90" width="120" height="280" rx="20" fill="url(#glass)" stroke="rgba(255,255,255,0.5)" strokeWidth="3" />
-                  
-                  {/* Liquid Inside */}
-                  <g filter="url(#glow)">
-                    <rect x="45" y="140" width="110" height="225" rx="15" fill="url(#liquid)" className="animate-pulse" />
-                    {/* Bubbles */}
-                    <circle cx="70" cy="300" r="5" fill="#fff" opacity="0.6" />
-                    <circle cx="100" cy="250" r="8" fill="#fff" opacity="0.4" />
-                    <circle cx="130" cy="180" r="4" fill="#fff" opacity="0.8" />
-                    <circle cx="80" cy="200" r="6" fill="#fff" opacity="0.5" />
-                  </g>
-                  
-                  {/* Label */}
-                  <rect x="35" y="180" width="130" height="80" fill="#111" stroke="#00ff41" strokeWidth="2" />
-                  <text x="100" y="210" fill="#fff" fontSize="12" fontWeight="bold" textAnchor="middle" letterSpacing="1">ANTI HANTA</text>
-                  <text x="100" y="230" fill="#00ff41" fontSize="10" textAnchor="middle">IMMUNITY SERUM</text>
-                  <text x="100" y="245" fill="#555" fontSize="8" textAnchor="middle">LOT #0x8F9...3B2</text>
-                  
-                  {/* Volume markings */}
-                  <line x1="165" y1="130" x2="155" y2="130" stroke="#fff" strokeWidth="2" opacity="0.5" />
-                  <line x1="165" y1="200" x2="155" y2="200" stroke="#fff" strokeWidth="2" opacity="0.5" />
-                  <line x1="165" y1="270" x2="155" y2="270" stroke="#fff" strokeWidth="2" opacity="0.5" />
-                  <line x1="165" y1="340" x2="155" y2="340" stroke="#fff" strokeWidth="2" opacity="0.5" />
-                </svg>
-              </div>
+            {/* LAB IMAGE */}
+            <div className="relative z-10 group">
+
+              {/* green glow */}
+              <div className="absolute inset-0 bg-[#00ff41]/20 blur-[70px] scale-110 rounded-full" />
+
+              {/* animated image */}
+              <motion.img
+                src="/images/lab-glass.png"
+                alt="ANTI HANTA Lab Glass"
+                className="relative w-[320px] md:w-[420px] object-contain drop-shadow-[0_0_40px_rgba(0,255,65,0.45)] select-none pointer-events-none"
+                draggable={false}
+                animate={{
+                  y: [0, -12, 0],
+                  rotate: [-1, 1, -1],
+                  scale: [1, 1.02, 1],
+                }}
+                transition={{
+                  duration: 5,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+              />
+
+              {/* scan glow */}
+              <div
+                className="absolute inset-0 opacity-20 mix-blend-screen pointer-events-none"
+                style={{
+                  background:
+                    "linear-gradient(to bottom, transparent 0%, rgba(0,255,65,0.35) 50%, transparent 100%)",
+                  backgroundSize: "100% 200px",
+                  animation: "scanMove 4s linear infinite",
+                }}
+              />
+
+              {/* floating particles */}
+              {[...Array(14)].map((_, i) => (
+                <motion.div
+                  key={i}
+                  className="absolute w-2 h-2 rounded-full bg-[#7fff00]"
+                  initial={{
+                    opacity: 0,
+                    x: Math.random() * 300 - 150,
+                    y: 100,
+                  }}
+                  animate={{
+                    opacity: [0, 1, 0],
+                    y: -180,
+                  }}
+                  transition={{
+                    duration: 3 + Math.random() * 4,
+                    repeat: Infinity,
+                    delay: Math.random() * 4,
+                  }}
+                  style={{
+                    left: "50%",
+                    bottom: "10%",
+                    boxShadow: "0 0 12px #7fff00",
+                  }}
+                />
+              ))}
+            </div>
             </div>
           </div>
         </motion.div>

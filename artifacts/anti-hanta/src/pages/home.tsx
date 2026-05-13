@@ -24,8 +24,8 @@ export function Home() {
         <Character />
         <Protocol />
         <AppMockup />
-        <Resistance />
         <Token />
+        <Resistance />
         <Faq />
       </main>
 

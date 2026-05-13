@@ -21,9 +21,6 @@ export function Footer() {
             <a href="#" className="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center text-white/70 hover:text-primary hover:border-primary hover:bg-primary/10 transition-all shadow-none hover:shadow-[0_0_15px_rgba(0,255,65,0.4)]">
               <SiX className="w-5 h-5" />
             </a>
-            <a href="#" className="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center text-white/70 hover:text-primary hover:border-primary hover:bg-primary/10 transition-all shadow-none hover:shadow-[0_0_15px_rgba(0,255,65,0.4)]">
-              <SiDiscord className="w-5 h-5" />
-            </a>
           </div>
 
         </div>

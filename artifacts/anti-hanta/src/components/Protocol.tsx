@@ -2,71 +2,274 @@ import { motion } from "framer-motion";
 
 export function Protocol() {
   return (
-    <section className="py-24 px-4 bg-black relative z-20 overflow-hidden">
-      {/* Background Matrix Effect */}
-      <div className="absolute inset-0 opacity-10 pointer-events-none font-mono text-[10px] text-primary leading-none overflow-hidden flex flex-wrap" aria-hidden="true">
-        {Array.from({ length: 100 }).map((_, i) => (
-          <div key={i} className="animate-pulse" style={{ animationDuration: `${Math.random() * 2 + 1}s`, animationDelay: `${Math.random() * 2}s` }}>
-            {Math.random().toString(36).substring(2, 15)}
-          </div>
-        ))}
+    <section className="relative z-20 overflow-hidden bg-black py-32 px-6">
+
+      {/* ================= ATMOSPHERE ================= */}
+      <div className="absolute inset-0 overflow-hidden">
+
+        {/* Green glow */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background: `
+              radial-gradient(circle at 50% 50%, rgba(0,255,65,0.12), transparent 35%),
+              radial-gradient(circle at 20% 20%, rgba(0,255,65,0.05), transparent 30%),
+              radial-gradient(circle at 80% 10%, rgba(0,255,65,0.04), transparent 30%)
+            `,
+          }}
+        />
+
+        {/* Scanlines */}
+        <div
+          className="absolute inset-0 opacity-[0.04]"
+          style={{
+            backgroundImage:
+              "repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,255,65,1) 3px)",
+          }}
+        />
+
+        {/* Matrix code */}
+        <div className="absolute inset-0 opacity-[0.06] pointer-events-none font-mono text-[10px] text-primary leading-none flex flex-wrap">
+          {Array.from({ length: 120 }).map((_, i) => (
+            <div
+              key={i}
+              className="animate-pulse"
+              style={{
+                animationDuration: `${Math.random() * 3 + 1}s`,
+                animationDelay: `${Math.random() * 2}s`,
+              }}
+            >
+              {Math.random().toString(36).substring(2, 14)}
+            </div>
+          ))}
+        </div>
+
+        {/* Vignette */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(circle at center, transparent 45%, rgba(0,0,0,0.92) 100%)",
+          }}
+        />
       </div>
 
-      <div className="max-w-6xl mx-auto relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="font-['Bebas_Neue'] text-6xl md:text-8xl text-white drop-shadow-[0_0_20px_rgba(0,255,65,0.6)]">
-            IMMUNE <span className="text-primary">PROTOCOL</span>
-          </h2>
-          <p className="text-primary font-mono tracking-[0.3em] mt-4 font-bold">COMMAND CENTER ONLINE</p>
-        </div>
+      {/* ================= CONTENT ================= */}
+      <div className="relative z-10 max-w-7xl mx-auto">
 
-        {/* Hologram Display */}
-        <div className="relative w-full max-w-4xl mx-auto aspect-video md:aspect-[21/9] border border-primary/50 bg-primary/5 rounded-lg backdrop-blur-sm shadow-[0_0_50px_rgba(0,255,65,0.15)] flex items-center justify-center overflow-hidden">
-          {/* Radar Background */}
-          <div className="absolute w-[80%] h-[80%] rounded-full border border-primary/20 flex items-center justify-center">
-            <div className="absolute w-[66%] h-[66%] rounded-full border border-primary/20"></div>
-            <div className="absolute w-[33%] h-[33%] rounded-full border border-primary/20"></div>
-            <div className="absolute w-full h-[1px] bg-primary/20"></div>
-            <div className="absolute h-full w-[1px] bg-primary/20"></div>
-            {/* Radar Sweep */}
-            <div className="absolute inset-0 rounded-full border border-primary/40 origin-center animate-[spin_4s_linear_infinite]"
+        {/* HEADER */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-16"
+        >
+          <div className="inline-flex items-center gap-3 border border-primary/30 bg-primary/5 px-5 py-2 mb-8 backdrop-blur-md">
+            <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+            <span className="text-primary font-mono text-xs tracking-[0.3em]">
+              COMMAND CENTER ONLINE
+            </span>
+          </div>
+
+          <h2
+            className="font-['Bebas_Neue'] leading-[0.9] text-white"
+            style={{
+              fontSize: "clamp(72px,10vw,170px)",
+              textShadow:
+                "0 0 30px rgba(0,255,65,0.35), 0 10px 40px rgba(0,0,0,0.9)",
+            }}
+          >
+            IMMUNE
+            <br />
+            <span
+              className="text-primary"
               style={{
-                background: "conic-gradient(from 0deg, transparent 70%, rgba(0,255,65,0.4) 100%)"
+                textShadow:
+                  "0 0 40px rgba(0,255,65,0.9), 0 0 120px rgba(0,255,65,0.3)",
               }}
-            ></div>
+            >
+              PROTOCOL
+            </span>
+          </h2>
+        </motion.div>
+
+        {/* ================= MAIN PANEL ================= */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.96 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.9 }}
+          className="
+            relative
+            w-full
+            max-w-6xl
+            mx-auto
+            overflow-hidden
+            rounded-[28px]
+            border
+            border-primary/20
+            bg-[#050505]/90
+            backdrop-blur-xl
+            shadow-[0_0_80px_rgba(0,255,65,0.12)]
+          "
+        >
+
+          {/* Top glow line */}
+          <div className="absolute inset-x-0 top-0 h-px bg-primary/50" />
+
+          {/* Radar BG */}
+          <div className="absolute inset-0 flex items-center justify-center">
+
+            <div className="relative w-[700px] h-[700px]">
+
+              {/* Radar circles */}
+              <div className="absolute inset-0 rounded-full border border-primary/10" />
+              <div className="absolute inset-[15%] rounded-full border border-primary/10" />
+              <div className="absolute inset-[30%] rounded-full border border-primary/10" />
+              <div className="absolute inset-[45%] rounded-full border border-primary/10" />
+
+              {/* Crosshair */}
+              <div className="absolute left-1/2 top-0 bottom-0 w-px bg-primary/10 -translate-x-1/2" />
+              <div className="absolute top-1/2 left-0 right-0 h-px bg-primary/10 -translate-y-1/2" />
+
+              {/* Rotating sweep */}
+              <motion.div
+                animate={{ rotate: 360 }}
+                transition={{
+                  repeat: Infinity,
+                  duration: 5,
+                  ease: "linear",
+                }}
+                className="absolute inset-0 rounded-full"
+                style={{
+                  background:
+                    "conic-gradient(from 0deg, transparent 70%, rgba(0,255,65,0.35) 100%)",
+                }}
+              />
+            </div>
           </div>
 
-          {/* Status Readouts */}
-          <div className="absolute top-4 left-4 font-mono text-xs text-primary space-y-2">
-            <div className="flex items-center gap-2"><div className="w-2 h-2 bg-primary animate-pulse"></div> IMMUNITY: 100%</div>
-            <div className="flex items-center gap-2"><div className="w-2 h-2 bg-primary animate-pulse"></div> THREAT LEVEL: CONTAINED</div>
-            <div className="flex items-center gap-2"><div className="w-2 h-2 bg-primary animate-pulse"></div> ETHEREUM SHIELD: ACTIVE</div>
-          </div>
+          {/* GRID */}
+          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-3 gap-10 p-8 md:p-14 min-h-[700px]">
 
-          <div className="absolute bottom-4 right-4 font-mono text-xs text-white/50 text-right">
-            <div>SYS.VER: 4.9.2</div>
-            <div>UPTIME: 99.99%</div>
-            <div className="text-primary mt-1 animate-pulse">AWAITING ORDERS...</div>
-          </div>
+            {/* LEFT STATUS */}
+            <div className="space-y-5">
 
-          {/* Animated Data Streams */}
-          <div className="absolute inset-y-0 left-1/4 w-px bg-gradient-to-b from-transparent via-primary to-transparent opacity-50 animate-[pulse_2s_ease-in-out_infinite]"></div>
-          <div className="absolute inset-y-0 right-1/3 w-px bg-gradient-to-b from-transparent via-primary to-transparent opacity-50 animate-[pulse_3s_ease-in-out_infinite]"></div>
+              {[
+                ["IMMUNITY", "100%"],
+                ["THREAT LEVEL", "CONTAINED"],
+                ["ETHEREUM SHIELD", "ACTIVE"],
+                ["OUTBREAK STATUS", "CONTROLLED"],
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  className="border border-primary/20 bg-primary/5 p-5 backdrop-blur-sm"
+                >
+                  <div className="text-xs font-mono tracking-[0.25em] text-white/40 mb-2">
+                    {item[0]}
+                  </div>
 
-          {/* Lab Silhouettes */}
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 flex items-end gap-10 opacity-40">
-            <svg viewBox="0 0 50 100" className="w-12 h-24 fill-primary">
-              <rect x="15" y="80" width="20" height="20" />
-              <path d="M15 40 L35 40 L40 80 L10 80 Z" />
-              <circle cx="25" cy="25" r="15" />
-            </svg>
-            <svg viewBox="0 0 50 100" className="w-10 h-20 fill-primary translate-y-4">
-              <rect x="15" y="80" width="20" height="20" />
-              <path d="M15 40 L35 40 L40 80 L10 80 Z" />
-              <circle cx="25" cy="25" r="15" />
-            </svg>
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+
+                    <div className="text-primary font-bold tracking-wider">
+                      {item[1]}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* CENTER CORE */}
+            <div className="flex flex-col items-center justify-center">
+
+              {/* Core */}
+              <motion.div
+                animate={{
+                  boxShadow: [
+                    "0 0 40px rgba(0,255,65,0.2)",
+                    "0 0 80px rgba(0,255,65,0.45)",
+                    "0 0 40px rgba(0,255,65,0.2)",
+                  ],
+                }}
+                transition={{
+                  repeat: Infinity,
+                  duration: 2.5,
+                }}
+                className="
+                  relative
+                  w-72
+                  h-72
+                  rounded-full
+                  border
+                  border-primary/40
+                  flex
+                  items-center
+                  justify-center
+                  bg-black/70
+                "
+              >
+
+                {/* Inner pulse */}
+                <div className="absolute inset-[18%] rounded-full border border-primary/30 animate-pulse" />
+
+                {/* Center */}
+                <div className="text-center">
+                  <div className="font-['Bebas_Neue'] text-[120px] leading-none text-primary">
+                    100
+                  </div>
+
+                  <div className="font-mono text-xs tracking-[0.35em] text-white/60">
+                    IMMUNE SCORE
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Subtitle */}
+              <div className="mt-8 text-center">
+                <div className="text-primary font-mono tracking-[0.3em] text-sm">
+                  ETHEREUM DEFENSE MATRIX
+                </div>
+              </div>
+            </div>
+
+            {/* RIGHT TERMINAL */}
+            <div className="flex flex-col justify-between">
+
+              {/* Terminal */}
+              <div className="border border-primary/20 bg-black/70 p-5 font-mono text-sm text-primary h-full">
+                <div className="text-white/40 mb-4">
+                  SYSTEM TERMINAL
+                </div>
+
+                <div className="space-y-2">
+                  <div>{">"} Initializing resistance nodes...</div>
+                  <div>{">"} Connecting Ethereum shield...</div>
+                  <div>{">"} Liquidity protection enabled...</div>
+                  <div>{">"} Anti-virus memes deployed...</div>
+                  <div>{">"} Scanning infected sectors...</div>
+
+                  <div className="text-white/50">
+                    {">"} Awaiting further commands...
+                  </div>
+                </div>
+
+                {/* blinking cursor */}
+                <div className="mt-3 flex items-center gap-1">
+                  <span className="text-primary">{">"}</span>
+                  <span className="w-3 h-5 bg-primary animate-pulse" />
+                </div>
+              </div>
+
+              {/* Footer */}
+              <div className="mt-6 flex justify-between text-xs font-mono text-white/30 tracking-wider">
+                <span>SYS.VER 4.9.2</span>
+                <span>UPTIME 99.99%</span>
+              </div>
+            </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

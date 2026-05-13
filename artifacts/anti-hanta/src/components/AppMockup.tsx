@@ -53,17 +53,68 @@ export function AppMockup() {
                 </div>
               </div>
 
-              {/* Circular Gauge */}
-              <div className="relative w-40 h-40 mx-auto mb-8 flex items-center justify-center">
-                <svg className="absolute inset-0 w-full h-full -rotate-90">
-                  <circle cx="80" cy="80" r="70" fill="none" stroke="#111" strokeWidth="8" />
-                  <circle cx="80" cy="80" r="70" fill="none" stroke="#00ff41" strokeWidth="8" strokeDasharray="440" strokeDashoffset="44" className="drop-shadow-[0_0_10px_rgba(0,255,65,0.8)]" />
-                </svg>
-                <div className="text-center">
-                  <div className="text-5xl font-['Bebas_Neue'] text-white">100</div>
-                  <div className="text-[10px] font-mono text-primary font-bold">IMMUNE SCORE</div>
-                </div>
-              </div>
+{/* Circular Gauge */}
+<div className="relative w-36 h-36 mx-auto mb-8 flex items-center justify-center">
+
+  {/* Ambient Glow */}
+  <div className="absolute inset-0 rounded-full bg-primary/10 blur-xl scale-125" />
+
+  <svg
+    viewBox="0 0 160 160"
+    className="absolute inset-0 w-full h-full -rotate-90"
+  >
+    {/* Background Ring */}
+    <circle
+      cx="80"
+      cy="80"
+      r="58"
+      fill="none"
+      stroke="#111"
+      strokeWidth="8"
+    />
+
+    {/* Soft Glow Ring */}
+    <circle
+      cx="80"
+      cy="80"
+      r="58"
+      fill="none"
+      stroke="rgba(0,255,65,0.18)"
+      strokeWidth="14"
+      className="blur-[4px]"
+    />
+
+    {/* Progress Ring */}
+    <circle
+      cx="80"
+      cy="80"
+      r="58"
+      fill="none"
+      stroke="#00ff41"
+      strokeWidth="8"
+      strokeLinecap="round"
+      strokeDasharray="364.4"
+      strokeDashoffset="36.4"
+      className="drop-shadow-[0_0_10px_rgba(0,255,65,0.85)]"
+    />
+  </svg>
+
+  {/* Center Text */}
+  <div className="relative z-10 text-center">
+    <div
+      className="text-4xl font-['Bebas_Neue'] text-white leading-none"
+      style={{
+        textShadow: "0 0 14px rgba(255,255,255,0.2)",
+      }}
+    >
+      100
+    </div>
+
+    <div className="mt-1 text-[9px] tracking-[0.22em] font-mono text-primary font-bold">
+      IMMUNE SCORE
+    </div>
+  </div>
+</div>
 
               {/* Status */}
               <div className="bg-[#111] border border-primary/30 rounded-xl p-4 mb-6 text-center">

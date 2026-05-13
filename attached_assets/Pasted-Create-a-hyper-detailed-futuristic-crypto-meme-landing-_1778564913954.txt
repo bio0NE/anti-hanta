@@ -41,7 +41,7 @@ HEADER:
   COMMUNITY
   FAQ
 * Right side:
-  neon green BUY $ANTI button
+  neon green BUY $ANHA button
   social icons:
   Telegram
   X/Twitter
@@ -67,7 +67,7 @@ Layout:
 * Warning style green text:
   “THE CURE IS SPREADING.”
 * CTA buttons:
-  BUY $ANTI
+  BUY $ANHA
   JOIN THE RESISTANCE
 
 WHITE RAT MASCOT DESIGN:
@@ -164,7 +164,7 @@ Large cinematic composition.
 
 BOTTOM TOKEN SECTION:
 Huge glowing text:
-$ANTI
+$ANHA
 THE CURE ON ETHEREUM
 
 Feature icons:
@@ -186,7 +186,7 @@ Huge text:
 THE CURE HAS ARRIVED
 
 CTA BUTTONS:
-BUY $ANTI NOW
+BUY $ANHA NOW
 ENTER THE LAB
 
 FOOTER:

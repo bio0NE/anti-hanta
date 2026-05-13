@@ -6,8 +6,8 @@ const faqs = [
     a: "ANTI HANTA is a community-driven survival token built as a counter-movement to the viral meme coin outbreaks. It represents immunity, resilience, and tactical on-chain warfare."
   },
   {
-    q: "How do I buy $ANTI?",
-    a: "You can acquire $ANTI through Uniswap or other decentralized exchanges on the Ethereum network. Simply connect your wallet, ensure you have ETH, and swap for $ANTI."
+    q: "How do I buy $ANHA?",
+    a: "You can acquire $ANHA through Uniswap or other decentralized exchanges on the Ethereum network. Simply connect your wallet, ensure you have ETH, and swap for $ANHA."
   },
   {
     q: "What blockchain is it on?",
