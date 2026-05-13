@@ -203,53 +203,122 @@ export function Resistance() {
             Arm yourself with $ANHA and hold the line against the outbreak.
           </p>
 
-          {/* Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+            {/* Buttons */}
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-5 mt-10">
 
-            <button
-              className="
-                px-10
-                py-5
-                text-lg
-                font-bold
-                tracking-[0.15em]
-                text-white
-                transition-all
-                duration-300
-                hover:-translate-y-1
-              "
-              style={{
-                background:
-                  "linear-gradient(135deg, #0088cc 0%, #00aaff 100%)",
-                boxShadow:
-                  "0 0 24px rgba(0,136,204,0.4), 0 10px 40px rgba(0,0,0,0.4)",
-              }}
-            >
-              TELEGRAM COMMS
-            </button>
+              {/* TELEGRAM */}
+              <a
+                href="https://t.me/AntiHanta_eth"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto"
+              >
+                <button
+                  className="
+                    w-full
+                    sm:w-auto
+                    font-['Bebas_Neue']
+                    text-2xl
+                    tracking-[0.12em]
+                    px-10
+                    py-4
+                    text-black
+                    transition-all
+                    duration-300
+                    hover:-translate-y-1
+                    hover:scale-[1.02]
+                    flex
+                    items-center
+                    justify-center
+                    gap-3
+                    border
+                    border-primary/40
+                  "
+                  style={{
+                    background:
+                      "linear-gradient(135deg, #00ff41 0%, #acf60b 100%)",
+                    boxShadow:
+                      "0 0 24px rgba(0,255,65,0.45), 0 10px 30px rgba(0,0,0,0.45)",
+                  }}
+                >
+                  TELEGRAM COMMS
+                </button>
+              </a>
 
-            <button
-              className="
-                px-10
-                py-5
-                text-lg
-                font-bold
-                tracking-[0.15em]
-                text-white
-                transition-all
-                duration-300
-                hover:-translate-y-1
-              "
-              style={{
-                background:
-                  "linear-gradient(135deg, #5865F2 0%, #7289da 100%)",
-                boxShadow:
-                  "0 0 24px rgba(88,101,242,0.4), 0 10px 40px rgba(0,0,0,0.4)",
-              }}
-            >
-              X COMMAND
-            </button>
-          </div>
+              {/* X */}
+              <a
+                href="https://x.com/AntiHanta_eth"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto"
+              >
+                <button
+                  className="
+                    w-full
+                    sm:w-auto
+                    font-['Bebas_Neue']
+                    text-2xl
+                    tracking-[0.12em]
+                    px-10
+                    py-4
+                    text-primary
+                    bg-black/40
+                    backdrop-blur-md
+                    border
+                    border-primary/40
+                    transition-all
+                    duration-300
+                    hover:-translate-y-1
+                    hover:bg-primary/10
+                    hover:border-primary
+                  "
+                  style={{
+                    boxShadow:
+                      "0 0 16px rgba(0,255,65,0.2), inset 0 0 20px rgba(0,255,65,0.03)",
+                  }}
+                >
+                  X COMMAND
+                </button>
+              </a>
+
+              {/* WHITEPAPER */}
+              <a
+                href="/AntiHanta_ANHA_Whitepaper_v1.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto"
+              >
+                <button
+                  className="
+                    w-full
+                    sm:w-auto
+                    font-['Bebas_Neue']
+                    text-2xl
+                    tracking-[0.12em]
+                    px-10
+                    py-4
+                    text-primary
+                    bg-black/40
+                    backdrop-blur-md
+                    border
+                    border-primary/40
+                    transition-all
+                    duration-300
+                    hover:-translate-y-1
+                    hover:bg-primary/10
+                    hover:border-primary
+                  "
+                  style={{
+                    boxShadow:
+                      "0 0 16px rgba(0,255,65,0.2), inset 0 0 20px rgba(0,255,65,0.03)",
+                  }}
+                >
+                  WHITEPAPER
+                </button>
+              </a>
+
+            </div>
+
         </motion.div>
       </div>
     </section>

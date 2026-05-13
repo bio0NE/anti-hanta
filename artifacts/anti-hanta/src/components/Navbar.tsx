@@ -21,10 +21,25 @@ export function Navbar() {
       </div>
 
       <div className="flex items-center gap-6">
-        <div className="hidden md:flex items-center gap-4 text-white/60">
-          <a href="#" className="hover:text-primary transition-colors"><SiTelegram className="w-5 h-5" /></a>
-          <a href="#" className="hover:text-primary transition-colors"><SiX className="w-5 h-5" /></a>
-        </div>
+      <div className="hidden md:flex items-center gap-4 text-white/60">
+        <a
+          href="https://t.me/AntiHanta_eth"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-primary transition-colors"
+        >
+          <SiTelegram className="w-5 h-5" />
+        </a>
+
+        <a
+          href="https://x.com/AntiHanta_eth"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-primary transition-colors"
+        >
+          <SiX className="w-5 h-5" />
+        </a>
+      </div>
         <button className="bg-primary/10 border border-primary text-primary px-6 py-2 font-bold hover:bg-primary hover:text-black transition-all duration-300 shadow-[0_0_15px_rgba(0,255,65,0.3)] hover:shadow-[0_0_25px_rgba(0,255,65,0.6)]">
           BUY $ANHA
         </button>

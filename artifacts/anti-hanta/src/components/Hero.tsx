@@ -202,63 +202,78 @@ export function Hero() {
       <span className="animate-pulse">⚠</span>
     </div>
 
-    {/* BUTTONS */}
-    <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        {/* BUTTONS */}
+        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
 
-<button
-  className="w-full sm:w-auto font-['Bebas_Neue'] text-2xl px-10 py-4 transition-all duration-300 hover:-translate-y-1 flex items-center justify-center gap-3"
-  style={{
-    background:
-      "linear-gradient(135deg, #00ff41 0%, #acf60b 100%)",
-    color: "#000",
-    boxShadow:
-      "0 0 24px rgba(0,255,65,0.55), 0 4px 16px rgba(0,0,0,0.5)",
-  }}
->
-  {/* Trading Candle SVG */}
-  <svg
-    width="22"
-    height="22"
-    viewBox="0 0 24 24"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    {/* Wick */}
-    <line
-      x1="12"
-      y1="2"
-      x2="12"
-      y2="22"
-      stroke="black"
-      strokeWidth="2"
-      strokeLinecap="round"
-    />
+          {/* BUY BUTTON */}
+          <a
+            href="https://app.uniswap.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto"
+          >
+            <button
+              className="w-full font-['Bebas_Neue'] text-2xl px-10 py-4 transition-all duration-300 hover:-translate-y-1 flex items-center justify-center gap-3"
+              style={{
+                background:
+                  "linear-gradient(135deg, #00ff41 0%, #acf60b 100%)",
+                color: "#000",
+                boxShadow:
+                  "0 0 24px rgba(0,255,65,0.55), 0 4px 16px rgba(0,0,0,0.5)",
+              }}
+            >
+              {/* Trading Candle SVG */}
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                {/* Wick */}
+                <line
+                  x1="12"
+                  y1="2"
+                  x2="12"
+                  y2="22"
+                  stroke="black"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                />
 
-    {/* Candle Body */}
-    <rect
-      x="8"
-      y="7"
-      width="8"
-      height="10"
-      rx="1"
-      fill="black"
-    />
-  </svg>
+                {/* Candle Body */}
+                <rect
+                  x="8"
+                  y="7"
+                  width="8"
+                  height="10"
+                  rx="1"
+                  fill="black"
+                />
+              </svg>
 
-  BUY $ANHA
-</button>
+              BUY $ANHA
+            </button>
+          </a>
 
-      <button
-        className="w-full sm:w-auto bg-black/40 backdrop-blur-md border border-primary text-primary font-['Bebas_Neue'] text-2xl px-10 py-4 hover:bg-primary/15 transition-all duration-300 hover:-translate-y-1"
-        style={{
-          boxShadow:
-            "0 0 16px rgba(0,255,65,0.2), inset 0 0 20px rgba(0,255,65,0.03)",
-        }}
-      >
-        JOIN THE RESISTANCE
-      </button>
-
-    </div>
+          {/* TELEGRAM BUTTON */}
+          <a
+            href="https://t.me/AntiHanta_eth"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto"
+          >
+            <button
+              className="w-full bg-black/40 backdrop-blur-md border border-primary text-primary font-['Bebas_Neue'] text-2xl px-10 py-4 hover:bg-primary/15 transition-all duration-300 hover:-translate-y-1"
+              style={{
+                boxShadow:
+                  "0 0 16px rgba(0,255,65,0.2), inset 0 0 20px rgba(0,255,65,0.03)",
+              }}
+            >
+              JOIN THE RESISTANCE
+            </button>
+          </a>
+        </div>
 
   </motion.div>
 </div>
